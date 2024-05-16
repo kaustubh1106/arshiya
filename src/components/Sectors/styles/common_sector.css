@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.wwt-main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Raleway;
+    row-gap: 40px;
+    padding: 30px;
+}
+.wwt-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wwt-con h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+.wwt-con span{
+    text-align: center;
+    color: #0F6DE0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wwt-button{
+    
+
+    background-color: white; /* Green */
+    border: #161644 solid 2px;
+    border-radius: 14px;
+    color: #161644;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600px;
+    min-width: 180px;
+  }
+
+.wwt-info{
+    background-color: #EFF1F3;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+
+  .wwt-button:hover {
+    background-color: #161644; /* Green */
+    border: #161644 solid 2px;
+    border-radius: 14px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600px;
+    min-width: 180px;
+  }
+  .wwt-routes{
+    display: flex;
+    gap: 50px; 
+  }
+
+  .wwt-button-pro{
+    background-color: #161644; /* Green */
+    border: #161644 solid 2px;
+    border-radius: 14px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600px;
+    min-width: 180px;
+  }
+  .wwt-button-pro i{
+    display: none;
+  }
+  .wwt-button-pro:hover i{
+    padding-left: 10px;
+    display: inline-block;
+  }
+
+/* Existing styles remain unchanged */
+
+@media only screen and (max-width: 768px) {
+  .wwt-main {
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .wwt-con h3 {
+      font-size: 30px; /* Decrease font size for smaller screens */
+  }
+
+  .wwt-info {
+      margin: 0 20px; /* Adjust margin for smaller screens */
+  }
+
+  .wwt-routes {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      gap: 20px; /* Adjust gap between buttons */
+  }
+
+  .wwt-button,
+  .wwt-button-pro {
+      min-width: unset; /* Remove minimum width */
+      width: 100%; /* Make buttons full width */
+  }
+
+  .wwt-button-pro i {
+      display: none; /* Hide arrow icon on smaller screens */
+  }
+}

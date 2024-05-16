@@ -1,0 +1,130 @@
+.nav-con{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #161645;
+    /* z-index: 1; */
+  }
+
+  .logo-nav{
+    height: 40px;
+    margin: 20px;
+  }
+  .links-nav-1{
+    margin: 10px;
+    display: none;
+  }
+  .links-nav{
+    /* background-color: azure; */
+        margin-right: 30px;
+        display: flex;
+        align-items:center;
+  }
+
+
+:root{
+    --bar-width:30px;
+    --bar-height:4px;
+    --hamburger-gap: 6px;
+    --foreground: white;  
+    /* foreground ka color set karna  */
+    --animation-timing: 200ms;
+  
+    --hamburger-height: calc(var(--bar-height)*3 + var(--hamburger-gap)*2);
+  }
+  
+  .hamburger-menu{
+  --x-width: calc(var(--hamburger-height)* 1.414);
+    
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: var(--hamburger-gap);
+    
+  }
+  
+  .hamburger-menu::after,
+  .hamburger-menu::before,
+  .hamburger-menu input{
+    content:"";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius:9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
+  }
+  
+  .hamburger-menu input{
+    appearance:none;
+    padding:0;
+    margin:0;
+    outline:none;
+  }
+  
+  
+  .hamburger-menu:has(input:checked)::before{
+    rotate:45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)*-0.5);
+  }
+  
+  .hamburger-menu:has(input:checked)::after{
+    rotate:-45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height)*0.5);
+  }
+  
+  
+  .hamburger-menu input:checked{
+    opacity:0;
+    width:0;
+  }
+
+  .hamburger-butn{
+    border:none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .nav-con {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo-nav {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .links-nav {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links-nav-1 {
+        display: block; /* Display links as block elements */
+        margin-bottom: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger-butn {
+        display: inline-block; /* Ensure hamburger button is visible */
+    }
+
+    .hamburger-menu input:checked ~ .links-nav {
+        display: flex; /* Show links when hamburger menu is checked */
+    }
+}

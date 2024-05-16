@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main-empanel{
+    font-family: Raleway;
+    background-color: white;
+    padding: 50px 100px 100px 100px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.container-empanel{
+    display: grid;
+    grid-template-columns: 291px 291px 291px 291px;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.photo{
+    width: 291px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    row-gap: 10px;
+}
+.photo:hover{
+    background-color: #fafafa;
+    transform: scale(1.1);
+    box-shadow: inset;
+}
+.photo span{
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-empanel {
+        padding: 50px 20px 100px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .container-empanel {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Use auto-fit for flexible grid layout */
+        justify-content: center;
+    }
+
+    .photo {
+        width: calc(100% - 40px); /* Adjust width to fit the container */
+        max-width: 250px; /* Set max-width for smaller screens */
+        margin: 0 auto; /* Centerize the photo */
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.glance-body{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 55px 60px 55px;
+    background-color: #161645;
+    
+}
+
+.gl-he{
+    display: flex;
+    flex-direction: column;
+    height: 68px;
+    row-gap: 18px;
+}
+
+.gl-he1{
+    color: white;
+    font-family: Raleway;
+    font-size: 24;
+    font-weight: 600;
+}
+
+.gl-he2{
+    color: white;
+    font-family: Raleway;
+    font-size: 20;
+    font-weight: 400;
+}
+
+@keyframes slide {
+    from {
+        transform : translateX(0);
+    }
+    to{
+        transform: translateX(-200%);
+    }
+}
+.corousel{
+    display: flex;
+    overflow: hidden;
+}

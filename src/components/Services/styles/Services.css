@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.serv{
+    background-color: white;
+    font-family: Raleway;
+    padding:20px;
+}
+
+.serv-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    
+}
+.serv-1 img{
+    
+    width: 503px;
+}
+
+.serv-1 span{
+    color: #0F6DE0;
+    font-weight: 600;
+}
+.serv-1 h3{
+    font-weight: 600;
+}
+.serv-1-para{
+    text-align: center;
+}
+.serv-2-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: aqua; */
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 60px;
+    padding: 20px;
+}
+.serv-2-g-con{
+    display: flex;
+    flex-direction: column;
+    max-width: 267px;
+}
+.serv-2-g-con:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out 0s;
+}
+.serv-2 img{
+    border-radius: 10px;
+}
+.button{
+    padding:20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button button{
+    border: transparent;
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .serv-1 img {
+        width: 100%; /* Make the image full width */
+    }
+
+    .serv-2-grid {
+        grid-template-columns: auto auto; /* Change to two columns */
+        column-gap: 60px; /* Adjust the gap between columns */
+        row-gap: 40px; /* Adjust the gap between rows */
+    }
+
+    .serv-2-g-con {
+        max-width: 100%; /* Make each grid container full width */
+    }
+
+    .button {
+        flex-direction: column; /* Change button layout to column */
+        align-items: center; /* Center align buttons */
+        gap: 10px; /* Adjust the gap between buttons */
+    }
+}

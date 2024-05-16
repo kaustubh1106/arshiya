@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0px;
+  padding: 0px;
+  
+}
+
+
+.body-about{
+  
+  background-color: #D6DCE0;
+  padding:60px;
+  position: relative;
+}
+
+.ab-img > img{
+  position:absolute;
+  box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+  
+}
+.img2{
+  
+  width: auto;
+  height: 279px;
+  left: 610px;
+  top: 330px;
+}
+.img1{
+  width: auto;
+  height: 340px;
+  right: 60px;
+  top: 60px;
+}
+
+
+
+.img3{
+  width: auto;
+  height: 340px;
+  right: 60px;
+  bottom: 60px;
+}
+.ab-text{
+  height: 700px;
+  width: 662px;
+  background-color: white;
+  padding:60px;
+  padding-right: 120px;
+  font-size: 14px;
+  overflow: scroll;
+}

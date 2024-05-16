@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main{
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Raleway;
+}
+.st-con{
+    max-width: 500px;
+}
+.st-con h3{
+    font-weight: 600;
+    font-size: 40px;
+}
+.st-con span{
+    color: #0F6DE0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.un li{
+   font-weight: 600;
+   margin-bottom: 10px; 
+}
